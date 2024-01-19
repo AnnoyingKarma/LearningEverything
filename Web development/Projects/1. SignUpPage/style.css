@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;;
+    font-weight: 900;
+}
+
+.outerBox{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top right  ,#e66465, #9198e5);
+
+.innerBox{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background: linear-gradient(to bottom, #ffffff,#ffffff33);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px lightpink;
+
+}
+
+.signupHeader h1{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.signUpBody{
+    margin: 20px 0;
+}
+.signUpBody p {
+    margin: 10px 0;
+}
+.signUpBody p label {
+    display: block;
+    color: #575757;
+}
+.signUpBody p input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
+.signUpBody p input[type="submit"]{
+    background-color: rgb(226, 224, 224);
+    cursor: pointer;
+}
+.signUpBody p input[type="submit"]:hover{
+    background-color: rgb(206, 205, 205);
+}
+.signUpFooter p{
+    color: black; 
+    text-align: center;
+}
+.signUpFooter p a{
+    color: blue;
+}
+}

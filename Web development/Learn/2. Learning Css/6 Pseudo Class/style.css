@@ -1,0 +1,55 @@
+.linker1:link{
+    color: yellow;
+}
+.linker1:active{
+    background-color: whitesmoke;
+}
+.linker1:visited{
+    color: red;
+}
+.linker1:hover{
+    background-color: gold;
+}
+body{
+    background-color: #7c7878;
+}
+::selection{
+    background-color: lightgoldenrodyellow;
+    color: darkorange;
+}
+.ulist:hover{
+    background-color: lightcoral;
+}
+.ulist1:hover{
+    background-color: lightcoral;
+}
+.ulist1 li:first-child{
+    background-color: blue;
+}
+.ulist1 li:last-child{
+    background-color: blue;
+}
+.ulist1 li:nth-child(2n+1){
+    color: aquamarine;
+}
+.ulist li:nth-child(2n){
+    background-color: aquamarine;
+}
+.ulist li:nth-child(2n+1){
+    background-color: lightseagreen;
+}
+h1{
+    color: darkred;
+}
+h1::first-letter{
+    font-size: 4rem;
+}
+p::first-line{
+    color: darkmagenta;
+}
+label::before{
+    content: "*";
+}
+label::after{
+    content: '*';
+}

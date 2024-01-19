@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: gray;
+    height: 40rem;
+    color: black;
+}
+.box1{
+    padding: 10px;
+}
+.box2{
+    float: left;
+    padding: 5px;
+}
+.box3{
+    padding: 5px;
+}
+.box4{
+    padding: 10px;
+}
+
+@media screen and (max-width: 300px){
+    .container{
+        background-color: yellowgreen;
+    }
+    .box2{
+        float: none;
+    }
+}

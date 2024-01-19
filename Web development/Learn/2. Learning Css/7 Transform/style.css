@@ -1,0 +1,18 @@
+.outerbox{
+    background-color: seagreen;
+    width: 400px;
+    height: 400px;
+}
+.innerbox{
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    /* transform: rotate(45deg); */
+    /* transform: scale(0.5); */
+    /* transform: skew(10deg, 30deg); */
+    /* transform: translate(100px, 100px); */
+
+    /* transform-origin: top left; */
+    /* transform-origin: center; */
+    /* transform-origin: right; */
+}

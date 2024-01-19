@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --my-bgcolor: rgb(27, 24, 24);
+}
+
+body{
+    background-color: var(--my-bgcolor);    
+}
+
+h2{
+   padding-bottom: 20px;
+   color: #eea69e;
+}
+
+p{
+    color: #a85b53;
+}
+
+.container{
+    margin: 5% 10%;
+}
+.box{
+    padding: 10px;
+    margin: 20px;
+    background-color: #312f2f;
+    border-radius: 30px;
+    min-width: 130px;
+}
+
+@media screen and (max-width: 300px){
+    body{
+        --my-bgcolor: #504848;
+        background-color: var(--my-bgcolor);
+    }
+    .box{
+        border-radius: 20px;
+    }
+}
