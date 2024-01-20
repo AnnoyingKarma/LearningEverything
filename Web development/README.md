@@ -232,3 +232,12 @@ Learning Web Development
 
 ## Objects
         1. Date()
+
+## Math functions
+        1. Math.random()
+        2. Math.ceil()
+        3. Math.floor()
+        4. Math.round()
+        5. Math.min() | Math.max()
+        6. Math.pow()
+        7. Math.sqrt()
