@@ -212,3 +212,23 @@ Learning Web Development
 ## Properties
 
         1. .length
+
+## Meathod
+
+        1. .lengthOf()
+        2. .lastIndexOf()
+        3. .slice()
+        4. .slice()
+        5. substr()
+        6. .replace()
+        7. .split()
+        8. .trim()
+        9. .toUpperCase() | .toLowerCase()
+        10. parseInt() | parseFloat()
+        11. .push() | .unshift()
+        12. .pop() | .shift()
+        13. .concat()
+        14. .forEach()
+
+## Objects
+        1. Date()
