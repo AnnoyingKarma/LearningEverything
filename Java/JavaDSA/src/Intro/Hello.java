@@ -17,5 +17,7 @@ public class Hello {
         System.out.println(track1);
         long high = 1000000000000000000L;
         System.out.println(high);
+        boolean isAlive = true;
+        System.out.println(isAlive);
     }
 }
