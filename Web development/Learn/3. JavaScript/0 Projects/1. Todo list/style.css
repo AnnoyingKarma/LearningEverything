@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: khaki;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.label1 {
+  font-size: 2rem;
+  color: cadetblue;
+}
+.label2 {
+  font-size: 2rem;
+  color: cadetblue;
+  margin-left: 800px;
+}
+
+.tarea {
+  margin: 0 auto;
+  display: block;
+  background-color: burlywood;
+  color: crimson;
+  font-weight: 900;
+  font-size: xx-large;
+  margin-top: 30px;
+  resize: none;
+  outline: none;
+}
