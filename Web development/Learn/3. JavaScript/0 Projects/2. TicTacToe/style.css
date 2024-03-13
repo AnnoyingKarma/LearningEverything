@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    background-color: #6e5160;
+}
+.oBorder {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.oBorder div {
+    filter: hue-rotate(270deg);
+    height: 92px;
+    width: 92px;
+    background-color: #36454f;
+    font-size: 70px;
+    text-align: center;
+}
+
+.playAgainBtn {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #7f5de8;
+    background-color: #36454f;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 10px;
+    border-color: #7f5de8;
+}
+div:hover {
+    cursor: pointer;
+}
+.turn {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #36454f;
+    text-shadow: 0 0 5px #7f5de8, 0 0 5px #7f5de8;
+}
+.gameName {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #7f5de8;
+    text-shadow: 2px 7px #36454f;
+}

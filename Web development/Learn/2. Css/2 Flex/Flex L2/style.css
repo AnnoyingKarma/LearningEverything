@@ -1,0 +1,28 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+}
+.emojis {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.emojis span {
+  background-image: linear-gradient(
+    to right,
+    rgba(204, 183, 182),
+    rgba(255, 255, 255)
+  );
+  font-size: 100px;
+}

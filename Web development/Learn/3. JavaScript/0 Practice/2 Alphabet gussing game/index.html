@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alphabet Guessing Game</title>
+    </head>
+    <body>
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                background-color: #e178c5;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+            .outer-box {
+                width: 50%;
+                height: 50%;
+                text-align: center;
+                border: 5px dotted #ffb38e;
+                background-color: #ff8e8f;
+            }
+            h1 {
+                color: #fffdcb;
+            }
+            textarea {
+                resize: none;
+                height: 20px;
+            }
+            p {
+                color: #322e2c;
+                font-weight: 500;
+                font-size: 1.1rem;
+                padding: 15px 30px;
+            }
+            label {
+                font-size: large;
+            }
+            h3 {
+                color: red;
+            }
+        </style>
+        <div class="outer-box">
+            <div class="inner-box">
+                <h1>Alphabet Guessing Game</h1>
+                <p>
+                    I have selected a Random Alphabet from A to Z. You have to
+                    guess the Alphabet. You will have 5 chances to guess the
+                    correct Alphabet. I will also provide hints if you are close
+                    to the Alphabet or not.
+                </p>
+
+                <label for="guess"><b>Your Guess : </b></label>
+                <input class="inputBox" type="text" id="guess" name="guess" />
+                <input class="submitButton" type="submit" value="Submit" />
+
+                <h3 class="underContent"></h3>
+
+                <p class="previousGuesses" hidden><b>Previous Guesses : </b></p>
+
+                <input
+                    class="newGame"
+                    type="submit"
+                    value="Start New Game"
+                    hidden
+                />
+            </div>
+        </div>
+
+        <script>
+            function ranNum() {
+                randomNum = Math.floor(Math.random() * (90 - 65 + 1) + 65);
+            }
+            function startNewGame() {
+                guesses = 0;
+                previousGuesses.hidden = true;
+                underContent.hidden = true;
+                newGame.hidden = true;
+                submitButton.disabled = false;
+                inputBox.disabled = false;
+                previousGuesses.innerHTML = "<b>Previous Guesses :  </b>";
+                inputBox.value = "";
+                inputBox.focus();
+            }
+            function lostGame() {
+                submitButton.disabled = true;
+                inputBox.clear = true;
+                inputBox.disabled = true;
+                underContent.style.color = "Red";
+                underContent.hidden = false;
+                underContent.innerHTML = "Try Again. You lost";
+                newGame.hidden = false;
+                ranNum();
+            }
+            function wonGame() {
+                underContent.hidden = false;
+                inputBox.disabled = true;
+                submitButton.disabled = true;
+                underContent.style.color = "Lime";
+                underContent.innerHTML = "You got it. Congrats";
+                newGame.hidden = false;
+                ranNum();
+            }
+            function guessesCounter() {
+                previousGuesses.append(" " + guess + " ");
+                underContent.hidden = true;
+                previousGuesses.hidden = false;
+                guesses++;
+                helpingHand();
+                inputBox.focus();
+                inputBox.value = "";
+            }
+            function wrongInput() {
+                underContent.style.color = "Red";
+                underContent.hidden = false;
+                underContent.innerHTML = "! Wrong Input !";
+                inputBox.focus();
+            }
+            function takeInput() {
+                theInput = inputBox.value;
+                theInput = theInput.toUpperCase();
+                theInput = theInput[0];
+                guess = theInput;
+                theInput = theInput.charCodeAt(0);
+            }
+            function helpingHand() {
+                if (theInput < randomNum) {
+                    underContent.innerHTML = "Go Ahead";
+                } else if (theInput > randomNum) {
+                    underContent.innerHTML = "Wait! Take Some Steps Back";
+                }
+                underContent.style.color = "Blue";
+                underContent.hidden = false;
+            }
+
+            const inputBox = document.querySelector(".inputBox");
+            const submitButton = document.querySelector(".submitButton");
+            let theInput,
+                guesses = 0,
+                guess,
+                underContent = document.querySelector(".underContent"),
+                previousGuesses = document.querySelector(".previousGuesses");
+
+            let randomNum = Math.floor(Math.random() * (90 - 65 + 1) + 65);
+            const newGame = document.querySelector(".newGame");
+            inputBox.focus();
+            submitButton.addEventListener("click", () => {
+                takeInput();
+                if (guesses >= 4) {
+                    lostGame();
+                } else if (theInput <= 90 && theInput >= 65) {
+                    if (theInput == randomNum) {
+                        wonGame();
+                    } else {
+                        guessesCounter();
+                    }
+                } else {
+                    wrongInput();
+                }
+
+                newGame.addEventListener("click", () => {
+                    startNewGame();
+                });
+            });
+        </script>
+    </body>
+</html>
