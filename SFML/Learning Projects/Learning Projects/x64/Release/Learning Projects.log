@@ -1,0 +1,40 @@
+﻿  FluidPhysics.cpp
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(10,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(11,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(15,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(16,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(20,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(50,20): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,76): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,76): warning C4244:         with
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,76): warning C4244:         [
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,76): warning C4244:             T=int
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,76): warning C4244:         ]
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,48): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,48): warning C4244:         with
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,48): warning C4244:         [
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,48): warning C4244:             T=int
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(95,48): warning C4244:         ]
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,79): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,79): warning C4244:         with
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,79): warning C4244:         [
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,79): warning C4244:             T=int
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,79): warning C4244:         ]
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,51): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,51): warning C4244:         with
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,51): warning C4244:         [
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,51): warning C4244:             T=int
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\FluidPhysics.cpp(100,51): warning C4244:         ]
+  Main.cpp
+  collision.cpp
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\collision.cpp(116,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\collision.cpp(117,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\collision.cpp(121,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\collision.cpp(122,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Programming\Learning Curve\SFML\Learning Projects\Learning Projects\collision.cpp(126,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  175 of 190 functions (92.1%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Learning Projects.vcxproj -> C:\Programming\Learning Curve\SFML\Learning Projects\x64\Release\Learning Projects.exe

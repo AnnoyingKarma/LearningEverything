@@ -1,0 +1,39 @@
+#include <iostream>
+#include <set>
+#include <vector>
+
+
+using namespace std;
+
+
+vector<vector<int>> sumOfThree(int &arr, int n){
+	set<vector<int>> sol;
+	set<int> store;
+	for(int i=0; i<n; i++){
+		for(int j=i+1; j<n; j++){
+				int val=-(arr[i]+arr[j]);
+				auto it=store.find(val);
+				if(it != store.end()){
+					vector<int> temp={arr[i],arr[j],val};
+					sort(temp.begin(),temp.end());
+					sol.insert(temp);
+				}
+		}
+	}	
+	vector<vector<int>> ans(sol.begin(),sol.end());
+	return ans;
+}
+
+
+int main(){
+	
+	int n=5;
+	vector<int> arr = {-1,-1,2,0,1};
+	vector<vector<int>> ans=sumOfThree(arr,n);	
+	for(int i=0; i<v.size(); i++){
+		for(int j=0; j<3; j++;){
+			cout << ans[i][j] << " ";
+		}
+		cout << "\n";
+	}
+}

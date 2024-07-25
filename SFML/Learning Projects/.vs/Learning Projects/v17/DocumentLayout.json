@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programming\\Learning Curve\\SFML\\Learning Projects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB7AF0E-8795-4B5D-9BD1-A5F1466F8E54}|Learning Projects\\Learning Projects.vcxproj|C:\\Programming\\Learning Curve\\SFML\\Learning Projects\\Learning Projects\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB7AF0E-8795-4B5D-9BD1-A5F1466F8E54}|Learning Projects\\Learning Projects.vcxproj|solutionrelative:Learning Projects\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Programming\\Learning Curve\\SFML\\Learning Projects\\Learning Projects\\Main.cpp",
+              "RelativeDocumentMoniker": "Learning Projects\\Main.cpp",
+              "ToolTip": "C:\\Programming\\Learning Curve\\SFML\\Learning Projects\\Learning Projects\\Main.cpp",
+              "RelativeToolTip": "Learning Projects\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-11T14:20:46.083Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

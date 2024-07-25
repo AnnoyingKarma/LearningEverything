@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programming\\Learning Curve\\SFML\\gameMechanicsLearn2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82E5AA0A-8959-4965-8985-7B181E99E16D}|gameMechanicsLearn2\\gameMechanicsLearn2.vcxproj|C:\\Programming\\Learning Curve\\SFML\\gameMechanicsLearn2\\gameMechanicsLearn2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{82E5AA0A-8959-4965-8985-7B181E99E16D}|gameMechanicsLearn2\\gameMechanicsLearn2.vcxproj|solutionrelative:gameMechanicsLearn2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Programming\\Learning Curve\\SFML\\gameMechanicsLearn2\\gameMechanicsLearn2\\main.cpp",
+              "RelativeDocumentMoniker": "gameMechanicsLearn2\\main.cpp",
+              "ToolTip": "C:\\Programming\\Learning Curve\\SFML\\gameMechanicsLearn2\\gameMechanicsLearn2\\main.cpp",
+              "RelativeToolTip": "gameMechanicsLearn2\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-09T05:54:33.148Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
