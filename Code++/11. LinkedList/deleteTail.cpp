@@ -30,20 +30,35 @@ void print(Node* head){
   }
 }
 
-Node* deleteHead(Node* head){
-  if(head==nullptr) return head;
-  Node* temp=head;
-  Node* next=head->next;
-  delete temp;
-  head=next;
+Node* deleteTail(Node* head){
+  Node* traverse=head;
+  if(traverse->next==nullptr || traverse==nullptr)return nullptr;
+  /* simple way
+  while(traverse){
+    Node* prev=traverse;
+    traverse=traverse->next;
+    if(traverse->next==nullptr){ 
+      prev->next=nullptr;
+      delete traverse;
+      return head;
+    }
+  }
+  */
+
+  while(traverse->next->next!=nullptr){
+    traverse=traverse->next;
+  }
+  delete traverse->next;
+  traverse->next=nullptr;
   return head;
 }
 
 int main(){
-  vector<int> arr={1,2,3,4,5,6,7,8,9};
+  vector<int> arr={1,2,3};
   Node* head=array2LL(arr);
   print(head);
-  head=deleteHead(head);
+  head=deleteTail(head);
   cout<< "\n";
   print(head);
 } 
+
