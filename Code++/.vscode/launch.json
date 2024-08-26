@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -9,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Programming/Learning Curve/Code++/8. Sorting",
-      "program": "c:/Programming/Learning Curve/Code++/8. Sorting/build/Debug/outDebug",
+      "cwd": "c:/Programming/Learning Curve/Code++/11. LinkedList",
+      "program": "c:/Programming/Learning Curve/Code++/11. LinkedList/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
