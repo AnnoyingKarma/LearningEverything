@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"MoneyPtr"</Description>
+      <VariableType>Double</VariableType>
+      <Address>"UnityPlayer.dll"+01A91840</Address>
+      <Offsets>
+        <Offset>500</Offset>
+        <Offset>18</Offset>
+        <Offset>0</Offset>
+        <Offset>64</Offset>
+        <Offset>150</Offset>
+        <Offset>0</Offset>
+        <Offset>10</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"AncientSoulPtr"</Description>
+      <VariableType>Double</VariableType>
+      <Address>"UnityPlayer.dll"+01B5D568</Address>
+      <Offsets>
+        <Offset>4D0</Offset>
+        <Offset>170</Offset>
+        <Offset>18</Offset>
+        <Offset>28</Offset>
+        <Offset>18</Offset>
+        <Offset>30</Offset>
+        <Offset>30</Offset>
+        <Offset>78</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

@@ -1,16 +1,23 @@
-#include <iostream>
+#include <windows.h>
 #include <vector>
-using namespace std;
 
-void recursion(int n){
-  if(n==0) return ;
-  recursion(n-1);
-  cout << n << " ";
+void SetWindowToFullScreen(HWND hwnd) {
+    ShowWindow(hwnd, SW_MAXIMIZE);
 }
 
-int main(){
-  int n;
-  cin>>n;
-  recursion(n);
+int main() {
+    std::vector<HWND> windows;
 
+    EnumWindows([](HWND hwnd, LPARAM lParam) -> BOOL {
+        if (IsWindowVisible(hwnd)) {
+            ((std::vector<HWND>*)lParam)->push_back(hwnd);
+        }
+        return TRUE;
+    }, reinterpret_cast<LPARAM>(&windows));
+
+    for (HWND hwnd : windows) {
+        SetWindowToFullScreen(hwnd);
+    }
+
+    return 0;
 }

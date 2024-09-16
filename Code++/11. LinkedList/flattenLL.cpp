@@ -47,6 +47,7 @@ void print(Node* head){
   cout << "\n";
 }
 
+/*
 Node* addNode(Node* root,Node* value){
   if(!value) return value;
   if(!root) return root;
@@ -84,6 +85,42 @@ Node* flatten (Node* root){
     traverse=traverse->next;
   }
   return root;
+}
+
+*/
+
+Node* merge(Node* head,Node* traverse){
+  while(traverse){
+    Node* temp=traverse;
+    Node* back=head;
+    Node* current=head->bottom;
+    while(temp && current){
+      if(temp->data<=current->data){
+        back->bottom=temp;
+        back=temp;
+        temp=temp->bottom;
+        back->bottom=current;
+      }
+      else{
+        back=back->bottom;
+        current=current->bottom;
+      }
+    }
+    if(temp!=nullptr){
+      back->bottom=temp;
+    }
+    traverse=traverse->next;
+  }
+  return head->bottom;
+}
+
+Node* flatten(Node* root){
+  if(root==nullptr || root->next==nullptr) return root;
+  Node* head=new Node(-1);
+  head->bottom=root;
+  Node* traverse=root->next;
+  return merge(head,traverse);
+
 }
 
 int main(){
