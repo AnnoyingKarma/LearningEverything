@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://s3tughg3ukop"]
+
+[ext_resource type="Script" path="res://Scripts/background.gd" id="1_dbrcm"]
+[ext_resource type="Texture2D" uid="uid://b6h30uhkpfh7w" path="res://Assets/Background/TreeBackground2.png" id="2_kwjsx"]
+
+[node name="background" type="ParallaxBackground"]
+script = ExtResource("1_dbrcm")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_kwjsx")
