@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1yx2vylm54st"]
+
+[ext_resource type="Texture2D" uid="uid://c2y72n02w7b02" path="res://Assets/Food/Food.png" id="1_3w2vo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jg6tm"]
+radius = 8.0
+
+[node name="food" type="RigidBody2D"]
+gravity_scale = 0.3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3w2vo")
+hframes = 8
+vframes = 8
+frame = 63
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jg6tm")

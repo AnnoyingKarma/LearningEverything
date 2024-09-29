@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://piebigskmf3n"]
+[gd_scene load_steps=5 format=3 uid="uid://piebigskmf3n"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_afcmg"]
 [ext_resource type="PackedScene" uid="uid://s3tughg3ukop" path="res://Scenes/background.tscn" id="1_ga4bb"]
 [ext_resource type="PackedScene" uid="uid://bn8hvrth3c0tu" path="res://Scenes/player.tscn" id="3_xp5dc"]
+[ext_resource type="PackedScene" uid="uid://c0wxlbcr8frx8" path="res://Scenes/spawner.tscn" id="4_dd6he"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_afcmg")
@@ -10,6 +11,9 @@ script = ExtResource("1_afcmg")
 [node name="player" parent="." instance=ExtResource("3_xp5dc")]
 position = Vector2(-3, 66)
 
+[node name="spawner" parent="." instance=ExtResource("4_dd6he")]
+
 [node name="background" parent="." instance=ExtResource("1_ga4bb")]
 
 [connection signal="scalingValue" from="background" to="player" method="_on_background_scaling_value"]
+[connection signal="scalingValue" from="background" to="spawner" method="_on_background_scaling_value"]
