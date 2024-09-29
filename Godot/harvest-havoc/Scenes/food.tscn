@@ -6,6 +6,7 @@
 radius = 8.0
 
 [node name="food" type="RigidBody2D"]
+collision_layer = 2
 gravity_scale = 0.3
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

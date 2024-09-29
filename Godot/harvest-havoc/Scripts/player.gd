@@ -37,3 +37,10 @@ func _physics_process(_delta: float) -> void:
 		position.x=0;
 	if (position.x<0):
 		position.x=GlobalScreenSize.x;
+	if(position.y>GlobalScreenSize.y-50):
+		position.y=GlobalScreenSize.y-50;
+	for i in get_slide_collision_count():
+		var c = get_slide_collision(i);
+		if c.get_collider() is RigidBody2D:
+			var rigid_body = c.get_collider();
+			rigid_body.call_deferred("queue_free");

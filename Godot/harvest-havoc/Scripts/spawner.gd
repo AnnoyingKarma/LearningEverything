@@ -8,7 +8,6 @@ var scalingValue;
 func _on_background_scaling_value(scaleValue: Vector2) -> void:
 	scalingValue=scaleValue;
 
-
 func _ready()->void:
 	pass
 
@@ -26,7 +25,6 @@ func inst(pos):
 	var randomFrameForFood:int=randi()%64;
 	foodSprite.frame=randomFrameForFood;
 	add_child(instOfFood);
-
 
 func _on_timer_timeout() -> void:
 	GlobalScreenSize=get_viewport_rect().size;

@@ -46,6 +46,7 @@ _data = {
 
 [node name="player" type="CharacterBody2D"]
 position = Vector2(100, 0)
+collision_mask = 2
 script = ExtResource("1_jmd5y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
