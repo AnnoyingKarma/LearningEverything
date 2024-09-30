@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://piebigskmf3n"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_mvky1"]
+[ext_resource type="PackedScene" uid="uid://byruw2lwrqksp" path="res://Scenes/score_manager.tscn" id="2_gchel"]
+[ext_resource type="PackedScene" uid="uid://bn8hvrth3c0tu" path="res://Scenes/player.tscn" id="3_3f8of"]
+[ext_resource type="PackedScene" uid="uid://c0wxlbcr8frx8" path="res://Scenes/spawner.tscn" id="4_epg2s"]
+[ext_resource type="PackedScene" uid="uid://deytn4tpi1pf1" path="res://Scenes/bottom_layer.tscn" id="5_dgfr0"]
+[ext_resource type="PackedScene" uid="uid://7c84s2t0jr2q" path="res://Scenes/retry_menu.tscn" id="6_j6yxu"]
+[ext_resource type="PackedScene" uid="uid://s3tughg3ukop" path="res://Scenes/background.tscn" id="6_nqhwo"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_mvky1")
+
+[node name="retryMenu" parent="." instance=ExtResource("6_j6yxu")]
+
+[node name="ScoreManager" parent="." instance=ExtResource("2_gchel")]
+unique_name_in_owner = true
+
+[node name="player" parent="." instance=ExtResource("3_3f8of")]
+position = Vector2(-3, 66)
+
+[node name="spawner" parent="." instance=ExtResource("4_epg2s")]
+
+[node name="BottomLayer" parent="." instance=ExtResource("5_dgfr0")]
+
+[node name="background" parent="." instance=ExtResource("6_nqhwo")]
+
+[connection signal="scalingValue" from="background" to="player" method="_on_background_scaling_value"]
+[connection signal="scalingValue" from="background" to="spawner" method="_on_background_scaling_value"]
+[connection signal="scalingValue" from="background" to="BottomLayer" method="_on_background_scaling_value"]

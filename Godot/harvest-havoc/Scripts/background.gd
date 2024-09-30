@@ -15,3 +15,9 @@ func _ready() -> void:
 	emit_signal("scalingValue",scaling);
 	
 	bgsprite.scale = scaling;
+
+
+func _on_button_pressed() -> void:
+	print('working');
+	get_tree().paused=true;
+	$"../retryMenu".visible=true;
