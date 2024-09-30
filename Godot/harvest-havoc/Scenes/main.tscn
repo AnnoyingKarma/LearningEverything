@@ -24,3 +24,4 @@ position = Vector2(-3, 66)
 
 [connection signal="scalingValue" from="background" to="player" method="_on_background_scaling_value"]
 [connection signal="scalingValue" from="background" to="spawner" method="_on_background_scaling_value"]
+[connection signal="scalingValue" from="background" to="BottomLayer" method="_on_background_scaling_value"]

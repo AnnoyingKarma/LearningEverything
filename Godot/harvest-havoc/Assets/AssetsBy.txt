@@ -1,3 +1,6 @@
 asset name : Free Pixel Food
 art: benmhenry@gmail.com
 itch.io
+
+Text Name : Super Pencil Font
+Text Font Link : link: https://www.fontspace.com/super-pencil-font-f114741

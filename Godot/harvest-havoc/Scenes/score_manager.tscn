@@ -26,11 +26,13 @@ layout_mode = 2
 
 [node name="scoreText" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "Score : "
 uppercase = true
 
 [node name="score" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "0"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/BoxContainer/VBoxContainer"]
@@ -38,9 +40,11 @@ layout_mode = 2
 
 [node name="bestScoreText" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "   Best : "
 uppercase = true
 
 [node name="bestScore" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
 text = "0"
