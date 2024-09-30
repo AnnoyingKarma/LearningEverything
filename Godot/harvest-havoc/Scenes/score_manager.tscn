@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://byruw2lwrqksp"]
+
+[node name="ScoreManager" type="Node"]
+
+[node name="Panel" type="PanelContainer" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 108.0
+offset_bottom = 53.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="BoxContainer" type="BoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/BoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/BoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="scoreText" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Score : "
+uppercase = true
+
+[node name="score" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/BoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="bestScoreText" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "   Best : "
+uppercase = true
+
+[node name="bestScore" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "0"

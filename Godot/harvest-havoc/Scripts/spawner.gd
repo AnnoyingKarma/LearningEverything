@@ -2,7 +2,7 @@ extends Node2D
 
 var FoodScene = preload("res://Scenes/food.tscn");
 var GlobalScreenSize;
-
+var strScore=0;
 var scalingValue;
 
 func _on_background_scaling_value(scaleValue: Vector2) -> void:
@@ -30,3 +30,9 @@ func _on_timer_timeout() -> void:
 	GlobalScreenSize=get_viewport_rect().size;
 	var pos=GlobalScreenSize;
 	inst(pos);
+	countScore();
+
+func countScore():
+	var scoreLabel=%ScoreManager.get_node("Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer/score");
+	strScore+=1;
+	scoreLabel.text = str(strScore);

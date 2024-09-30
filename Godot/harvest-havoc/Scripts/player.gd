@@ -4,7 +4,7 @@ var Speed=600.0;
 var Acceleration=3000.0;
 var ScreenPressed;
 var ScreenPosition;
-
+var strScore=0;
 
 func _ready() -> void:
 	GlobalScreenSize = get_viewport_rect().size;
@@ -33,6 +33,8 @@ func _physics_process(_delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x,0,Acceleration*_delta);
 	move_and_slide();
+
+func _process(delta: float) -> void:
 	if (position.x>GlobalScreenSize.x):
 		position.x=0;
 	if (position.x<0):
