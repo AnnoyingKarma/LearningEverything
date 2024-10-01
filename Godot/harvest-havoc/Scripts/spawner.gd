@@ -13,7 +13,7 @@ func _on_background_scaling_value(scaleValue: Vector2) -> void:
 	scalingValue=scaleValue;
 
 func _ready()->void:
-	pass
+	bestScore.text=GlobalScript.highScore.text;
 
 func inst(pos):
 	pos.y=-pos.y-16;
@@ -37,7 +37,6 @@ func _on_timer_timeout() -> void:
 	countScore();
 	lose();
 
-
 func countScore():
 	strScore+=1;
 	scoreLabel.text = str(strScore);
@@ -45,5 +44,11 @@ func countScore():
 func lose():
 	if (playerHealth.value==10):
 		$"../GameOver".visible=true;
-		bestScore.text=str(strScore);
 		timer.stop();
+		if(strScore>int(bestScore.text)):
+			bestScore.text=str(strScore);
+			saveFile();
+
+func saveFile():
+	GlobalScript.config.set_value("Score","bestScore",bestScore);
+	GlobalScript.config.save("res://SaveFile/score.cfg");
