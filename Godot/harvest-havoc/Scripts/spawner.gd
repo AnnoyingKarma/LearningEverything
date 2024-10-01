@@ -4,6 +4,10 @@ var FoodScene = preload("res://Scenes/food.tscn");
 var GlobalScreenSize;
 var strScore=0;
 var scalingValue;
+@onready var scoreLabel=%ScoreManager.get_node("Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer/score");
+@onready var playerHealth=%ScoreManager.get_node("Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer3/healthBar");
+@onready var bestScore=%ScoreManager.get_node("Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer2/bestScore");
+@onready var timer=$Timer;
 
 func _on_background_scaling_value(scaleValue: Vector2) -> void:
 	scalingValue=scaleValue;
@@ -31,8 +35,15 @@ func _on_timer_timeout() -> void:
 	var pos=GlobalScreenSize;
 	inst(pos);
 	countScore();
+	lose();
+
 
 func countScore():
-	var scoreLabel=%ScoreManager.get_node("Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer/score");
 	strScore+=1;
 	scoreLabel.text = str(strScore);
+
+func lose():
+	if (playerHealth.value==10):
+		$"../GameOver".visible=true;
+		bestScore.text=str(strScore);
+		timer.stop();

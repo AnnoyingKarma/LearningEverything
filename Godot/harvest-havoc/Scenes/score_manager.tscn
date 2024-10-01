@@ -1,4 +1,10 @@
-[gd_scene format=3 uid="uid://byruw2lwrqksp"]
+[gd_scene load_steps=3 format=3 uid="uid://byruw2lwrqksp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vps0n"]
+bg_color = Color(0, 0.713726, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xgsh"]
+bg_color = Color(0.615686, 0, 0, 1)
 
 [node name="ScoreManager" type="Node"]
 
@@ -48,3 +54,21 @@ uppercase = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "0"
+
+[node name="HBoxContainer3" type="VBoxContainer" parent="Panel/MarginContainer/BoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="healthText" type="Label" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "  HEALTH"
+uppercase = true
+
+[node name="healthBar" type="ProgressBar" parent="Panel/MarginContainer/BoxContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(0, 18.785)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_vps0n")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6xgsh")
+max_value = 10.0
+fill_mode = 1
+show_percentage = false

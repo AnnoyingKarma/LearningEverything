@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://piebigskmf3n"]
 
-[ext_resource type="Script" path="res://Scripts/main.gd" id="1_mvky1"]
+[ext_resource type="PackedScene" uid="uid://bdu4nna24wvc7" path="res://Scenes/game_over.tscn" id="1_ku04n"]
 [ext_resource type="PackedScene" uid="uid://byruw2lwrqksp" path="res://Scenes/score_manager.tscn" id="2_gchel"]
 [ext_resource type="PackedScene" uid="uid://bn8hvrth3c0tu" path="res://Scenes/player.tscn" id="3_3f8of"]
 [ext_resource type="PackedScene" uid="uid://c0wxlbcr8frx8" path="res://Scenes/spawner.tscn" id="4_epg2s"]
@@ -9,9 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://s3tughg3ukop" path="res://Scenes/background.tscn" id="6_nqhwo"]
 
 [node name="game" type="Node2D"]
-script = ExtResource("1_mvky1")
+
+[node name="GameOver" parent="." instance=ExtResource("1_ku04n")]
 
 [node name="retryMenu" parent="." instance=ExtResource("6_j6yxu")]
+visible = false
 
 [node name="ScoreManager" parent="." instance=ExtResource("2_gchel")]
 unique_name_in_owner = true

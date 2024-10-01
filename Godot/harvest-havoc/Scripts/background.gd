@@ -18,6 +18,5 @@ func _ready() -> void:
 
 
 func _on_button_pressed() -> void:
-	print('working');
 	get_tree().paused=true;
 	$"../retryMenu".visible=true;
