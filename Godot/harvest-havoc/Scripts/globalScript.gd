@@ -2,12 +2,11 @@ extends Node
 
 var config;
 var highScore;
-
+var currentScene;
 
 func _ready()-> void:
 	config=ConfigFile.new();
 	load_game();
-	print(highScore.text);
 
 func load_game():
 	var err=GlobalScript.config.load("res://SaveFile/score.cfg");

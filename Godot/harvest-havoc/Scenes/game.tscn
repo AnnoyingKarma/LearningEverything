@@ -13,7 +13,13 @@
 [node name="GameOver" parent="." instance=ExtResource("1_ku04n")]
 
 [node name="retryMenu" parent="." instance=ExtResource("6_j6yxu")]
-visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 800.0
+offset_bottom = 450.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ScoreManager" parent="." instance=ExtResource("2_gchel")]
 unique_name_in_owner = true

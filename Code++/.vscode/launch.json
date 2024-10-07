@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Programming/Learning Curve/Code++/11. LinkedList",
-      "program": "c:/Programming/Learning Curve/Code++/11. LinkedList/build/Debug/outDebug",
+      "cwd": "c:/Programming/Learning Curve/Code++/12. Recursion",
+      "program": "c:/Programming/Learning Curve/Code++/12. Recursion/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

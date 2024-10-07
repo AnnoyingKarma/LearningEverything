@@ -3,10 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://71q423lvyxgs" path="res://Assets/UI's/retry.png" id="1_ivylt"]
 [ext_resource type="Script" path="res://Scripts/retry_menu.gd" id="1_wtnp3"]
 
-[node name="retryMenu" type="CanvasLayer"]
+[node name="retryMenu" type="Control"]
+layout_mode = 3
 script = ExtResource("1_wtnp3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -14,52 +16,60 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_ivylt")
 
-[node name="PanelContainer" type="PanelContainer" parent="TextureRect"]
+[node name="Panel" type="Panel" parent="TextureRect"]
 layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -255.0
-offset_top = -29.0
-offset_right = -14.0
-offset_bottom = 147.0
+anchors_preset = -1
+anchor_left = 0.681
+anchor_top = 0.407
+anchor_right = 0.965
+anchor_bottom = 0.867
+offset_left = 0.199951
+offset_top = -0.150009
+offset_bottom = -0.150024
 grow_horizontal = 0
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="TextureRect/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/Panel"]
 layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+anchor_left = 0.088
+anchor_top = 0.097
+anchor_right = 0.912
+anchor_bottom = 0.928
+offset_left = 0.0239983
+offset_top = -0.0790005
+offset_right = -0.0240173
+offset_bottom = -0.0960083
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/PanelContainer/MarginContainer"]
+[node name="Continue" type="Button" parent="TextureRect/Panel/VBoxContainer"]
 layout_mode = 2
-
-[node name="Continue" type="Button" parent="TextureRect/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 35
 text = "CONTINUE
 "
 
-[node name="Retry" type="Button" parent="TextureRect/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="Retry" type="Button" parent="TextureRect/Panel/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 35
 text = "RETRY"
 
-[node name="Mainmenu" type="Button" parent="TextureRect/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="Mainmenu" type="Button" parent="TextureRect/Panel/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 35
 text = "Main Menu"
 
-[node name="Quit" type="Button" parent="TextureRect/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="Quit" type="Button" parent="TextureRect/Panel/VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_font_sizes/font_size = 35
 text = "QUIT"
 
-[connection signal="pressed" from="TextureRect/PanelContainer/MarginContainer/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
-[connection signal="pressed" from="TextureRect/PanelContainer/MarginContainer/VBoxContainer/Retry" to="." method="_on_retry_pressed"]
-[connection signal="pressed" from="TextureRect/PanelContainer/MarginContainer/VBoxContainer/Mainmenu" to="." method="_on_mainmenu_pressed"]
-[connection signal="pressed" from="TextureRect/PanelContainer/MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/VBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/VBoxContainer/Mainmenu" to="." method="_on_mainmenu_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

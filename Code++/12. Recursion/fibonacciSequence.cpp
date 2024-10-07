@@ -10,8 +10,10 @@ int fib(int n,int a,int b){
 }
 
 int fib(int n){
-  if(n<=1) return n;
-  return fib(n-1)+fib(n-2);
+  if(n<2){
+    return n;
+  }
+  return fib(n-2)+(n-1);
 }
 
 int main(){
