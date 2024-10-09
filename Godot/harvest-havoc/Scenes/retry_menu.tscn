@@ -5,6 +5,7 @@
 
 [node name="retryMenu" type="Control"]
 layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_wtnp3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
